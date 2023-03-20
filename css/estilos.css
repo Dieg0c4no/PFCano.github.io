@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+}
+
+
+/*navegador de página*/
+#inicio {
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 18)), url(/img/labrador.jfif);
+    text-decoration: none;
+    font-style: italic;
+    color: white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+#inicio nav ul li {
+    display: inline-block;
+    margin: 20px;
+
+}
+
+#inicio nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 40px;
+    font-size: 20px;
+}
+
+
+/*fin de navegador de página*/
+
+/*logo de la empresa*/
+.logo {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.logo1 img {
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.logo h2 {
+    text-align: center;
+    margin-top: -100px;
+}
+
+#umaShop {
+    display: flex;
+    justify-content: center;
+}
+
+.umaH img {
+    margin: 100px 100px;
+    width: 500px;
+    height: auto;
+}
+
+
+/*fin logo de la empresa*/
+
+
+/*inicio página de productos*/
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo img {
+    background-image: url(../img/tarjeta.png);
+    width: 500px;
+    height: auto;
+    margin: 70px 70px;
+}
+
+.perro-img {
+    /*caja hijo*/
+    width: 300px;
+    height: 200px;
+    margin: 30px 30px;
+    object-fit: cover;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.perro {
+    /*caja padre*/
+    margin: 60px 60px;
+    display: flex;
+    flex-wrap: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.perro1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.perro1 button {
+    color: blue;
+    height: 30px;
+    width: 60px;
+}
+
+.recom iframe {
+    margin: 20px 20px;
+}
+
+.recom {
+    margin: 30px 30px;
+
+}
+
+.prod {
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 18));
+    color: white;
+    padding: 5px 15px;
+}
+
+/*fin página de productos*/
+
+
+/* inicio página index*/
+
+.container {
+    border: 1px solid rgb(60, 136, 60);
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+    height: 300px;
+}
+
+.container img {
+    width: 300px;
+    height: auto;
+}
+
+.container h3 {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.container button {
+    width: 60px;
+    height: 30px;
+}
+/* grid*/
+.contenedor{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 300px 100px;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    padding-top: 200px;
+    gap:20px;
+
+}
+
+.contenedor .contenedor__item{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section form {
+    background-color: #8a96e5;
+    width: 300px;
+    height: auto;
+    border-style: double;
+    border-radius: 5px;
+    margin: 40px 100px 40px 500px;
+}
+
+#correo {
+    width: 200px;
+}
+
+.enviar {
+    margin-left: 100px;
+    padding-top: 10px;
+}*/
+
+/*fin página index*/
+
+
+/*página de contacto*/
+.form-cont{
+    display: flex;  
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 120px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+form{ 
+    width: 100%; 
+    height: auto;
+    border: 1px solid rgb(254, 150, 38);
+    border-radius: 3px;
+    letter-spacing: 2px;
+    text-align: justify;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 20px;
+    background: hsla(312, 77%, 86%, 1);
+    background: linear-gradient(90deg, hsla(312, 77%, 86%, 1) 0%, hsla(220, 61%, 79%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(312, 77%, 86%, 1) 0%, hsla(220, 61%, 79%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(312, 77%, 86%, 1) 0%, hsla(220, 61%, 79%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F7C0EC", endColorstr="#A7BDEA", GradientType=1);
+}
+
+form h3 {
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+form label , input {
+    display: block;
+    padding: 6px;
+
+}
+
+
+
+/*fin página de contacto*/
+footer {
+    background-color: rgb(136, 117, 154);
+    font-size: 20px;
+    padding: 20px;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+}
+
+/*accesorios.html*/
+.jugueteria {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.jugueteria .chiches img {
+    background: rgb(129, 216, 126);
+    width: 150px;
+    height: auto;
+    padding: 5px;
+}
+
+.jugueteria .chiches img:hover {
+    border: 1px solid #777;
+}
+
+.jugue h2 {
+    margin: 100px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(172, 94, 172);
+    color: white;
+}
+
+.perroUma {
+    display: flex;
+    justify-content: center;
+}
+
+.perroUma img {
+    width: 400px;
+    height: auto;
+    margin-top: 150px;
+    border-radius: 2px;
+}
+
+/*servicios*/
+.sectionCan {
+    background-color: rgb(143, 143, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.sectionCan .sectionCan__img{
+   
+    width: 200px;
+    height: auto;
+}
+
+.sectionCan .sectionCan__text  {
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    text-align: justify;
+}
+
+@media (max-width:400px) {
+    .contenedor {
+        background: red;
+    }
+}
+.servi-lava{
+    margin-top: 10%;
+    margin-bottom: 8%;
+
+}
