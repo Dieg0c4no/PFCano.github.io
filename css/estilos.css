@@ -7,28 +7,12 @@
 
 /*navegador de página*/
 #inicio {
-    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 18)), url(/img/labrador.jfif);
-    text-decoration: none;
-    font-style: italic;
-    color: white;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-}
-
-#inicio nav ul li {
-    display: inline-block;
-    margin: 20px;
-
-}
-
-#inicio nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 40px;
+    background: linear-gradient(#f87c7ccc, rgba(30, 15, 15, 17));
     font-size: 20px;
+    height: 60px;
 }
 
+#inicio a {}
 
 /*fin de navegador de página*/
 
@@ -70,6 +54,8 @@
 
 
 /*inicio página de productos*/
+@media(min-width: 992px) {}
+
 .titulo {
     display: flex;
     justify-content: center;
@@ -82,48 +68,25 @@
     margin: 70px 70px;
 }
 
-.perro-img {
-    /*caja hijo*/
-    width: 300px;
-    height: 200px;
-    margin: 30px 30px;
-    object-fit: cover;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.perro {
-    /*caja padre*/
-    margin: 60px 60px;
-    display: flex;
-    flex-wrap: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.perro1 {
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
-}
-
-.perro1 button {
-    color: blue;
-    height: 30px;
-    width: 60px;
-}
-
 .recom iframe {
     margin: 20px 20px;
 }
 
 .recom {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
     margin: 30px 30px;
 
 }
 
+.recom p {
+    width: 50%;
+}
+
 .prod {
-    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 18));
+    background: linear-gradient(#fc9393cc, rgba(33, 16, 16, 18));
     color: white;
     padding: 5px 15px;
 }
@@ -133,7 +96,7 @@
 
 /* inicio página index*/
 
-.container {
+.contenedor .contenedor__container {
     border: 1px solid rgb(60, 136, 60);
     display: inline-block;
     padding: 10px;
@@ -142,7 +105,7 @@
     height: 300px;
 }
 
-.container img {
+.contenedor .contenedor__item .contenedor__container img {
     width: 300px;
     height: auto;
 }
@@ -152,54 +115,93 @@
     font-size: 25px;
 }
 
-.container button {
-    width: 60px;
+.contenedor .contenedor__item .contenedor__container button {
+    width: 100px;
     height: 30px;
+    margin-top: 15px;
+
 }
+
+.emojis {
+    display: flex;
+    margin-left: 35%;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.emojis .emojis__tam img {
+    width: 50px;
+    height: auto;
+    padding: 10px;
+
+}
+
 /* grid*/
-.contenedor{
-    display:grid;
+.contenedor {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px 300px 100px;
     justify-content: space-around;
     align-items: center;
     height: 300px;
     padding-top: 200px;
-    gap:20px;
+    padding-bottom: 300px;
+    gap: 20px;
 
 }
 
-.contenedor .contenedor__item{
+.contenedor .contenedor__item {
     padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section form {
-    background-color: #8a96e5;
-    width: 300px;
-    height: auto;
-    border-style: double;
-    border-radius: 5px;
-    margin: 40px 100px 40px 500px;
+/* responsive index*/
+@media (max-width:576px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 300px;
+        margin-bottom: 300px;
+        width: 100%;
+    }
+
+    .btn {
+        margin-right: 40px;
+    }
 }
 
-#correo {
-    width: 200px;
+@media(min-width: 992px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .contenedor {
+        align-content: stretch;
+        width: 100%;
+        gap: 0;
+
+    }
+
+    .contenedor .contenedor__item {
+        padding: 0;
+
+    }
 }
 
-.enviar {
-    margin-left: 100px;
-    padding-top: 10px;
-}*/
 
 /*fin página index*/
 
 
 /*página de contacto*/
-.form-cont{
-    display: flex;  
+.form-cont {
+    display: flex;
     margin: auto;
     margin-top: 150px;
     margin-bottom: 120px;
@@ -207,8 +209,9 @@ section form {
     align-items: center;
     width: 300px;
 }
-form{ 
-    width: 100%; 
+
+.form-cont__contacto {
+    width: 100%;
     height: auto;
     border: 1px solid rgb(254, 150, 38);
     border-radius: 3px;
@@ -224,14 +227,16 @@ form{
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F7C0EC", endColorstr="#A7BDEA", GradientType=1);
 }
 
-form h3 {
+.form-cont h3 {
     padding: 10px;
     text-align: center;
     font-size: 25px;
 }
-form label , input {
+
+.form-cont .form-cont__contacto button {
     display: block;
     padding: 6px;
+    margin-top: 10px;
 
 }
 
@@ -248,10 +253,27 @@ footer {
 }
 
 /*accesorios.html*/
-.jugueteria {
+
+@media (max-width:576px) {
+    .jugueteria {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .jugueteria {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-around;
+    }
+}
+
+.juguetria {
     display: flex;
     flex-wrap: wrap;
-
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -292,6 +314,23 @@ footer {
 }
 
 /*servicios*/
+@media (max-width: 576px) {
+    h1.servi-lava {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .row {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #inicio {
+        width: 100%
+    }
+}
+
 .sectionCan {
     background-color: rgb(143, 143, 235);
     display: flex;
@@ -300,25 +339,20 @@ footer {
     gap: 50px;
 }
 
-.sectionCan .sectionCan__img{
-   
+.sectionCan .sectionCan__img {
+
     width: 200px;
     height: auto;
 }
 
-.sectionCan .sectionCan__text  {
+.sectionCan .sectionCan__text {
     display: inline-block;
     width: 300px;
     height: auto;
     text-align: justify;
 }
 
-@media (max-width:400px) {
-    .contenedor {
-        background: red;
-    }
-}
-.servi-lava{
+.servi-lava {
     margin-top: 10%;
     margin-bottom: 8%;
 

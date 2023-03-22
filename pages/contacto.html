@@ -8,21 +8,56 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>contacto</title>
 </head>
 
 <body>
-    <header id="inicio">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/productos.html">Productos</a> </li>
-                <li><a href="../pages/accesorios.html">Accesorios</a></li>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-dark prod">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">UMA SHOP
+                <img src="../img/favicon-32x32.png" alt="garritas">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Sobre nosotros</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Más
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="../pages/accesorios.html">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="../pages/servicios.html">Servicios</a></li>
+                                <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <div class="logo">
         <div class="logo1">
@@ -31,9 +66,9 @@
             <h2>La tienda de mascotas</h2>
         </div>
     </div>
-    
+
     <div class="form-cont">
-        <form action="" method="">
+        <form class="form-cont__contacto" action="" method="">
             <h3>Contacto</h3>
 
             <label for="nombre">Nombre</label>
@@ -45,16 +80,33 @@
             <label for="mail">Correo</label>
             <input type="email" id="mail">
 
-            <input type="submit" value="enviar">
-            
+            <button type="button" class="btn btn-danger">Enviar</button>
         </form>
     </div>
-    
+    <div class="emojis d-flex">
+        <div class="emojis__tam">
+            <img src="../img/whatsapp.png" alt="">
+        </div>
+        <div class="emojis__tam">
+            <img src="../img/instagram.png" alt="">
+        </div>
+        <div class="emojis__tam">
+            <img src="../img/facebook.png" alt="">
+        </div>
+        <div class="emojis__tam">
+            <img src="../img/youtube.png" alt="">
+        </div>
+    </div>
+
     <footer>
         <p>
             La tienda de mascotas <strong>&copy; 2023</strong>
         </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
