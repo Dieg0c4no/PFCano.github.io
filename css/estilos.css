@@ -12,7 +12,7 @@
     height: 60px;
 }
 
-#inicio a {}
+
 
 /*fin de navegador de página*/
 
@@ -54,7 +54,7 @@
 
 
 /*inicio página de productos*/
-@media(min-width: 992px) {}
+
 
 .titulo {
     display: flex;
