@@ -1,0 +1,15 @@
+.emojis {
+    display: flex;
+    margin-left: 35%;
+    width: 30%;
+    justify-content: space-around;
+
+    .emojis__tam {
+        img {
+            width: 50px;
+            height: auto;
+            padding: 10px;
+            margin: 20px 0 0 10px;
+        }
+    }
+}

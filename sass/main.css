@@ -1,0 +1,353 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "EB Garamond", serif;
+}
+
+/*vars*/
+footer {
+  background-color: rgb(136, 117, 154);
+  font-size: 20px;
+  height: 30px;
+  margin: 20px 20px;
+  text-align: center;
+}
+
+.navbar.navbar-dark.prod {
+  background: linear-gradient(rgba(252, 147, 147, 0.8), rgb(33, 16, 16));
+  color: white;
+  padding: 5px 15px;
+}
+
+.logo {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+.logo .logo1 h1 {
+  font-size: 50px;
+  text-align: center;
+}
+.logo .logo1 img {
+  align-items: center;
+}
+.logo .logo1 h2 {
+  text-align: center;
+  margin-top: -100px;
+  color: white;
+}
+
+.emojis {
+  display: flex;
+  margin-left: 35%;
+  width: 30%;
+  justify-content: space-around;
+}
+.emojis .emojis__tam img {
+  width: 50px;
+  height: auto;
+  padding: 10px;
+  margin: 20px 0 0 10px;
+}
+
+/*pagina index responsive*/
+@media screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+  .btn {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navbar {
+    width: 100%;
+  }
+  .contenedor {
+    align-content: stretch;
+    width: 100%;
+    gap: 0;
+  }
+  .contenedor .contenedor__item {
+    padding: 0;
+  }
+}
+/*responsive accesorios*/
+@media (max-width: 600px) {
+  .jugueteria {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  .perroUma {
+    margin-top: 100px;
+    margin-bottom: 90px;
+  }
+  .perroUma img {
+    width: 50%;
+    height: auto;
+  }
+  #umaShop .umaH {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .jugueteria {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+  }
+  @keyframes tituloJuguetes {
+    0% {
+      background: rgb(247, 176, 247);
+      width: 1000px;
+      height: 20px;
+    }
+    50% {
+      background: rgb(118, 35, 118);
+      width: 1100px;
+      height: 30px;
+    }
+    100% {
+      background: rgb(37, 5, 37);
+      width: 1200px;
+      height: 40px;
+    }
+  }
+  .jugue {
+    border: 1px solid black;
+    animation: tituloJuguetes;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 0s;
+  }
+}
+/*responsive servicios*/
+@media (max-width: 600px) {
+  .servi-lava {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .logo {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+  .logo .logo1 {
+    width: 50%;
+  }
+  .logo .logo1 h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .logo .logo1 img {
+    align-items: center;
+    width: 100%;
+  }
+  .logo .logo1 h2 {
+    text-align: center;
+    margin-top: -80px;
+  }
+  .row {
+    width: 100%;
+    justify-content: center;
+  }
+  #inicio {
+    width: 100%;
+  }
+  .card {
+    width: 400px;
+  }
+  .card .row .col-md-6 {
+    width: 400px;
+  }
+  .card .row .col-md-6 .img-fluid {
+    background-image: url(../img/baño.jpg);
+    width: 400px;
+    height: 200px;
+  }
+  .card .row .col-md-6 .card-body .card-text {
+    color: black;
+  }
+}
+/*index*/
+#umaShop {
+  display: flex;
+  justify-content: center;
+}
+#umaShop .umaH img {
+  margin: 50px;
+  width: 400px;
+  height: auto;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+.contenedor .contenedor__item .contenedor__container {
+  border: 1px solid rgba(114, 120, 120, 0.349);
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  border-radius: 3px;
+  height: 100%;
+}
+.contenedor .contenedor__item .contenedor__container img {
+  width: 100%;
+  height: auto;
+}
+.contenedor .contenedor__item .contenedor__container h3 {
+  padding: 10px;
+  font-size: 25px;
+}
+.contenedor .contenedor__item .contenedor__container button {
+  width: 100px;
+  height: 30px;
+  margin-top: 15px;
+}
+
+.alert {
+  margin: 10px 20px;
+  height: 50px;
+}
+
+/*fin index*/
+/*productos*/
+.titulo {
+  display: flex;
+  justify-content: center;
+}
+.titulo img {
+  background-image: url(../img/tarjeta.png);
+  width: 40%;
+  height: auto;
+  margin: 70px 70px;
+}
+
+.prod {
+  background: linear-gradient(rgba(252, 147, 147, 0.8), rgb(33, 16, 16));
+  color: white;
+  padding: 5px 15px;
+}
+
+.recom {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 30px;
+}
+.recom iframe {
+  margin: 20px;
+}
+.recom p {
+  width: 40%;
+}
+
+/*fin productos*/
+/*accesorios*/
+.perroUma {
+  display: flex;
+  justify-content: center;
+}
+.perroUma img {
+  width: 20%;
+  height: auto;
+  margin-top: 30px;
+  border-radius: 2px;
+}
+
+.jugue {
+  background: rgba(181, 8, 181, 0.729);
+  margin: 100px;
+  height: 45px;
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+.jugue .animate__animated {
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+.jugueteria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.jugueteria .chiches img {
+  border: 1px solid rgba(35, 34, 34, 0.3137254902);
+  width: 150px;
+  height: auto;
+  padding: 5px;
+}
+.jugueteria .chiches img:hover {
+  border: none;
+  background: 1px rgb(129, 216, 126);
+}
+
+/*fin accesorios*/
+/*contacto*/
+.form-cont {
+  display: flex;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+.form-cont .form-cont__contacto {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(254, 150, 38);
+  border-radius: 3px;
+  letter-spacing: 2px;
+  text-align: justify;
+  overflow: hidden;
+  padding: 20px;
+  font-size: 20px;
+  background: hsl(312, 77%, 86%);
+  background: linear-gradient(90deg, hsl(312, 77%, 86%) 0%, hsl(220, 61%, 79%) 100%);
+  background: -webkit-linear-gradient(90deg, hsl(312, 77%, 86%) 0%, hsl(220, 61%, 79%) 100%);
+}
+.form-cont .form-cont__contacto h3 {
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+.form-cont .form-cont__contacto .btn {
+  display: block;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+/*fin contacto*/
+/*servicios*/
+.servi-lava {
+  margin: 150px 0px 40px 0px;
+}
+
+#prod2 {
+  margin: 100px;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */

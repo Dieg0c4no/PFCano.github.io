@@ -1,0 +1,54 @@
+/*index*/
+
+#umaShop {
+    display: flex;
+    justify-content: center;
+
+    .umaH {
+        img {
+            margin: 50px;
+            width: 400px;
+            height: auto;
+        }
+    }
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+
+    .contenedor__item {
+
+        .contenedor__container {
+            border: 1px solid rgba(114, 120, 120, 0.349);
+            display: inline-block;
+            padding: 10px;
+            text-align: center;
+            border-radius: 3px;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            h3 {
+                padding: 10px;
+                font-size: 25px;
+            }
+
+            button {
+                width: 100px;
+                height: 30px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.alert {
+    margin: 10px 20px;
+    height: 50px;
+}
+
+/*fin index*/

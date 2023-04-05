@@ -1,0 +1,24 @@
+.logo {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    margin-top: 50px;
+
+    .logo1 {
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        img {
+            align-items: center;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: -100px;
+            color: white;
+        }
+    }
+}

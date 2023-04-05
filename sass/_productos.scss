@@ -1,0 +1,36 @@
+/*productos*/
+.titulo {
+    display: flex;
+    justify-content: center;
+
+    img {
+        background-image: url(../img/tarjeta.png);
+        width: 40%;
+        height: auto;
+        margin: 70px 70px;
+    }
+}
+
+.prod {
+    background: linear-gradient(#fc9393cc, rgba(33, 16, 16, 18));
+    color: white;
+    padding: 5px 15px;
+}
+
+.recom {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 30px;
+
+    iframe {
+        margin: 20px;
+    }
+
+    p {
+        width: 40%;
+    }
+}
+
+/*fin productos*/

@@ -1,0 +1,40 @@
+/*contacto*/
+.form-cont {
+    display: flex;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+
+    & &__contacto {
+        h3 {
+            padding: 10px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .btn {
+            display: block;
+            padding: 6px;
+            margin-top: 10px;
+        }
+
+        width: 100%;
+        height: auto;
+        border: 1px solid rgb(254, 150, 38);
+        border-radius: 3px;
+        letter-spacing: 2px;
+        text-align: justify;
+        overflow: hidden;
+        padding: 20px;
+        font-size: 20px;
+        background: hsla(312, 77%, 86%, 1);
+        background: linear-gradient(90deg, hsla(312, 77%, 86%, 1) 0%, hsla(220, 61%, 79%, 1) 100%);
+        background: -moz-linear-gradient(90deg, hsla(312, 77%, 86%, 1) 0%, hsla(220, 61%, 79%, 1) 100%);
+        background: -webkit-linear-gradient(90deg, hsla(312, 77%, 86%, 1) 0%, hsla(220, 61%, 79%, 1) 100%);
+    }
+}
+
+/*fin contacto*/

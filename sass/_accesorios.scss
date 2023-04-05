@@ -1,0 +1,54 @@
+/*accesorios*/
+
+.perroUma {
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 20%;
+        height: auto;
+        margin-top: 30px;
+        border-radius: 2px;
+    }
+}
+
+.jugue {
+    background: rgba(181, 8, 181, 0.729);
+    margin: 100px;
+    height: 45px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+
+    .animate__animated {
+        animation-duration: 4s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+    }
+}
+
+.jugueteria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+
+    .chiches {
+        img {
+            border: 1px solid #23222250;
+            width: 150px;
+            height: auto;
+            padding: 5px;
+
+            &:hover {
+                border: none;
+                background: 1px rgb(129, 216, 126);
+            }
+        }
+    }
+}
+
+/*fin accesorios*/
