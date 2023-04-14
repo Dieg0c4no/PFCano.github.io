@@ -1,4 +1,4 @@
-/*pagina index responsive*/
+/*responsive index*/
 @media screen and (max-width: $mobile) {
     .navbar {
         width: 100%;
@@ -9,7 +9,6 @@
         flex-direction: row;
         align-content: space-between;
         width: 100%;
-        padding: 10px;
     }
 
 
@@ -44,20 +43,28 @@
     }
 
     .perroUma {
-        margin-top: 100px;
-        margin-bottom: 90px;
-
-        img {
-            width: 50%;
-            height: auto;
-
-        }
+        margin-top: 65px;
+        margin-bottom: 40px;
+        width: 100%;
+        height: auto;
     }
 
     #umaShop {
+        width: 300px;
+        margin: 0px 120px;
+
         .umaH {
-            margin-top: 30px;
+            margin-top: 40px;
+            width: 200px;
+            height: auto;
+            margin-right: 270px;
         }
+    }
+}
+
+.chiches {
+    h4 {
+        font-size: 20px;
     }
 }
 
@@ -67,40 +74,42 @@
         grid-template-columns: auto auto auto auto;
         justify-content: space-around;
     }
-        @keyframes tituloJuguetes {
-            0%{
-                background: rgb(247, 176, 247);
-                width: 1000px;
-                height: 20px;
-            }
-            50%{
-                background: rgb(118, 35, 118);
-                width: 1100px;
-                height: 30px;
-            }
-            100%{
-                background: rgb(37, 5, 37);
-                width: 1200px;
-                height: 40px;
-            }
-            
+
+    @keyframes tituloJuguetes {
+        0% {
+            background: rgb(247, 176, 247);
+            width: 1000px;
+            height: 20px;
         }
-        .jugue{
-            border: 1px solid black;
-            animation: tituloJuguetes;
-            animation-iteration-count: 2;
-            animation-timing-function: linear;
-            animation-duration: 4s;
-            animation-delay: 0s;
+
+        50% {
+            background: rgb(118, 35, 118);
+            width: 1100px;
+            height: 30px;
         }
+
+        100% {
+            background: rgb(37, 5, 37);
+            width: 1200px;
+            height: 40px;
+        }
+
     }
 
+    .jugue {
+        border: 1px solid black;
+        animation: tituloJuguetes;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-duration: 4s;
+        animation-delay: 0s;
+    }
+}
 
 /*responsive servicios*/
 @media (max-width: $mobile) {
     .servi-lava {
-        margin-top: 100px;
-        text-align: center;
+        font-size: 27px;
     }
 
     .logo {
@@ -118,13 +127,14 @@
             }
 
             img {
-                align-items: center;
                 width: 100%;
+                margin-bottom: 4px;
             }
 
             h2 {
                 text-align: center;
-                margin-top: -80px;
+                margin-top: -60px;
+                font-size: 20px;
             }
         }
     }
@@ -140,9 +150,11 @@
 
     .card {
         width: 400px;
+
         .row {
             .col-md-6 {
                 width: 400px;
+
                 .img-fluid {
                     background-image: url(../img/baño.jpg);
                     width: 400px;
@@ -151,7 +163,7 @@
             }
 
             .col-md-6 {
-              
+
                 .card-body {
                     .card-text {
                         color: black;
@@ -163,3 +175,26 @@
 
 }
 
+/*responsive productos*/
+@media screen and (max-width: $mobile) {
+    .recom {
+        width: 370px;
+
+        iframe {
+            width: 43%;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .prod {
+        font-size: 18px;
+    }
+
+    .titulo {
+        width: 170%;
+        margin-left: -142px;
+    }
+}

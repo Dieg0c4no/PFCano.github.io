@@ -3,25 +3,24 @@
 .perroUma {
     display: flex;
     justify-content: center;
-
     img {
         width: 20%;
         height: auto;
-        margin-top: 30px;
-        border-radius: 2px;
+        margin-top: 10%;
+        border-radius: 10px;
     }
 }
 
 .jugue {
     background: rgba(181, 8, 181, 0.729);
-    margin: 100px;
+    margin: 4%;
     height: 45px;
     text-align: center;
     padding: 5px;
     color: white;
 
     .animate__animated {
-        animation-duration: 4s;
+        animation-duration: 2s;
         animation-timing-function: ease-in;
         animation-iteration-count: infinite;
     }

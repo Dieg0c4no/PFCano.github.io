@@ -53,7 +53,7 @@ footer {
   margin: 20px 0 0 10px;
 }
 
-/*pagina index responsive*/
+/*responsive index*/
 @media screen and (max-width: 600px) {
   .navbar {
     width: 100%;
@@ -63,7 +63,6 @@ footer {
     flex-direction: row;
     align-content: space-between;
     width: 100%;
-    padding: 10px;
   }
   .btn {
     margin-right: 40px;
@@ -91,17 +90,26 @@ footer {
     gap: 20px;
   }
   .perroUma {
-    margin-top: 100px;
-    margin-bottom: 90px;
-  }
-  .perroUma img {
-    width: 50%;
+    margin-top: 65px;
+    margin-bottom: 40px;
+    width: 100%;
     height: auto;
   }
+  #umaShop {
+    width: 300px;
+    margin: 0px 120px;
+  }
   #umaShop .umaH {
-    margin-top: 30px;
+    margin-top: 40px;
+    width: 200px;
+    height: auto;
+    margin-right: 270px;
   }
 }
+.chiches h4 {
+  font-size: 20px;
+}
+
 @media (min-width: 1200px) {
   .jugueteria {
     display: grid;
@@ -128,7 +136,7 @@ footer {
   .jugue {
     border: 1px solid black;
     animation: tituloJuguetes;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-duration: 4s;
     animation-delay: 0s;
@@ -137,8 +145,7 @@ footer {
 /*responsive servicios*/
 @media (max-width: 600px) {
   .servi-lava {
-    margin-top: 100px;
-    text-align: center;
+    font-size: 27px;
   }
   .logo {
     height: 50px;
@@ -154,12 +161,13 @@ footer {
     text-align: center;
   }
   .logo .logo1 img {
-    align-items: center;
     width: 100%;
+    margin-bottom: 4px;
   }
   .logo .logo1 h2 {
     text-align: center;
-    margin-top: -80px;
+    margin-top: -60px;
+    font-size: 20px;
   }
   .row {
     width: 100%;
@@ -183,14 +191,33 @@ footer {
     color: black;
   }
 }
+/*responsive productos*/
+@media screen and (max-width: 600px) {
+  .recom {
+    width: 370px;
+  }
+  .recom iframe {
+    width: 43%;
+  }
+  .recom p {
+    font-size: 15px;
+  }
+  .prod {
+    font-size: 18px;
+  }
+  .titulo {
+    width: 170%;
+    margin-left: -142px;
+  }
+}
 /*index*/
 #umaShop {
   display: flex;
   justify-content: center;
 }
 #umaShop .umaH img {
-  margin: 50px;
-  width: 400px;
+  margin: 50px 0px;
+  width: 350px;
   height: auto;
 }
 
@@ -267,20 +294,20 @@ footer {
 .perroUma img {
   width: 20%;
   height: auto;
-  margin-top: 30px;
-  border-radius: 2px;
+  margin-top: 10%;
+  border-radius: 10px;
 }
 
 .jugue {
   background: rgba(181, 8, 181, 0.729);
-  margin: 100px;
+  margin: 4%;
   height: 45px;
   text-align: center;
   padding: 5px;
   color: white;
 }
 .jugue .animate__animated {
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-iteration-count: infinite;
 }
@@ -348,6 +375,6 @@ footer {
 }
 
 #prod2 {
-  margin: 100px;
+  margin: 55px;
   text-align: center;
 }/*# sourceMappingURL=main.css.map */
