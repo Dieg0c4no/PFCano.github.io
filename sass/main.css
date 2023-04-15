@@ -10,7 +10,7 @@ footer {
   background-color: rgb(136, 117, 154);
   font-size: 20px;
   height: 30px;
-  margin: 20px 20px;
+  margin: 15px 20px;
   text-align: center;
 }
 
@@ -250,6 +250,39 @@ footer {
 .alert {
   margin: 10px 20px;
   height: 50px;
+}
+
+.siteMap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 90px 90px 90px 90px;
+  background: linear-gradient(to bottom right, blue, rgb(202, 108, 124));
+  color: white;
+  margin: 15px;
+}
+.siteMap .siteTitle {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+  font-size: 30px;
+}
+.siteMap .producto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.siteMap .producto a {
+  color: white;
+  text-decoration: none;
+}
+.siteMap .producto a:hover {
+  background: #dace2e;
+}
+.siteMap .emojis {
+  grid-column: -4/-1;
+  grid-row: 4/5;
 }
 
 /*fin index*/
