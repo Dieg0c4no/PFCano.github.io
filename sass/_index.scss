@@ -55,7 +55,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 90px 90px 90px 90px;
-    background: linear-gradient(to bottom right, blue, rgb(202, 108, 124)); 
+    background: linear-gradient(to bottom right, blue, rgb(202, 108, 124));
     color: white;
     margin: 15px;
 
@@ -83,7 +83,8 @@
             background: #dace2e;
         }
     }
-    .emojis{
+
+    .emojis {
         grid-column: -4/-1;
         grid-row: 4/5;
     }

@@ -159,6 +159,7 @@
     .navbar {
         width: 100%;
     }
+
     .contenedor {
         display: flex;
         flex-direction: column;
@@ -232,6 +233,7 @@
     margin-top: 10px;
 
 }
+
 /*fin página de contacto*/
 
 footer {
